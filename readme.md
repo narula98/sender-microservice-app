@@ -1,5 +1,10 @@
 # Transaction Object encryption application
-This is an sample application that receives an sample HTTP Post request and encrypts it. Once encryption is done the encrypted transaction object is sent to receiver url which then decrypts it and adds it to db
+This is an sample application that receives an sample HTTP Post request and encrypts it. Once encryption is done the encrypted transaction object is sent to receiver microservice which then decrypts it and adds it to db. 
+
+
+## Github Repo Links:
+* Sender microservice: https://github.com/narula98/sender-microservice-app
+* Receiver microservice: https://github.com/narula98/receiver-microservice-app
 
 
 ## Heroku Deployment link:
