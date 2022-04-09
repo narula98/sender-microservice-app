@@ -25,7 +25,6 @@ public class EncryptObject {
             sha = MessageDigest.getInstance("SHA-1");
             byte[] key = sha.digest(ENCRYPT_KEY_BYTES);
             key = Arrays.copyOf(key, 16);
-            System.out.println(key);
             return new SecretKeySpec(key, "AES");
         } catch (Exception e) {
             throw new IllegalStateException(e);
