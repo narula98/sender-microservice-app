@@ -25,9 +25,7 @@ public class TransactionController {
 			return transactionService.sendTransaction(transactionObj);	
 		}
 		catch(Exception e) {
-			
-				 return new ResponseEntity<String>(e.getLocalizedMessage(), new ResponseEntity<>(HttpStatus.BAD_REQUEST).getStatusCode());
-			
+			return new ResponseEntity<String>(e.getLocalizedMessage(), new ResponseEntity<>(HttpStatus.BAD_REQUEST).getStatusCode());			
 		}
 		 
 	}
