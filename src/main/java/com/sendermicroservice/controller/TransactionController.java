@@ -21,6 +21,7 @@ public class TransactionController {
 	
 	@PostMapping(path="/sender")
 	public ResponseEntity<?> encryptTransactionObject(@RequestBody Transaction transactionObj) {
+		System.out.println("In sender controller");
 		try {
 			return transactionService.sendTransaction(transactionObj);	
 		}
